@@ -9,6 +9,7 @@ Penggunaan pembelajaran mesin (Machine Learning) adalah metode yang akurat dalam
 2. BUSINESS UNDERSTANDING
 
     2.1. Problem Statement 
+
 Dalam konteks ini, tujuan investor adalah membuat keputusan investasi yang cerdas dan terinformasi mengenai saham PT. Bank Mandiri. Investor berharap dapat menggunakan prediksi harga saham sebagai panduan untuk mengambil keputusan investasi yang tepat waktu dan menguntungkan[2]. Oleh karena itu, analisis indeks harga saham PT. Bank Mandiri menjadi penting untuk memperoleh pemahaman yang mendalam tentang tren dan perilaku pasar.
 
 Contoh Kasus:
