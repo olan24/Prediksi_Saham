@@ -128,40 +128,31 @@ RMSE adalah akar kuadrat dari MSE. RMSE cenderung memungkinkan interpretasi yang
 Rumus RMSE:
 
 RMSE = √MSE 
-Pada hasil evaluasi modelling data ini menunjukkan MSE, R-Square (R2), dan RMSE adalah: 
-
-artinya, berdasarkan hasil perhitumgan di atas maka Estimasi model menggunakan MSE (Mean Squared Error), R-squared (R2), dan RMSE (Root Mean Squared Error) pada tiga jenis algoritma berikut:
-KNN (K-Nearest Neighbor Regressor), RF (Random Forest Regressor) dan NN (Neural Network).
-
-* KNN (K-Nearest Neighbor Regressor):
-
-a.	Nilai MSE (Mean Squared Error) adalah 0.2851081. MSE mengukur root mean square error antara nilai prediksi dan nilai aktual dalam kumpulan data. Semakin rendah nilai MSE, semakin baik kinerja model. Dalam hal ini, nilai MSE yang relatif tinggi menunjukkan bahwa regressor JST memiliki tingkat kesalahan yang cukup besar dalam memprediksi nilai target. Nilai R2 (R kuadrat) adalah -0.1931589. 
-b.	Nilai R2 berkisar dari -∞ hingga 1, di mana 0 menunjukkan bahwa model tidak dapat menjelaskan semua variasi dan 1 menunjukkan bahwa model dapat menjelaskan semua variasi dengan sempurna. Dalam hal ini, nilai R2 negatif menunjukkan bahwa model regresi JST tidak dapat menjelaskan variasi data dengan baik.
-c.	Nilai RMSE (Root Mean Squared Error) adalah 0,5339551. RMSE adalah akar kuadrat dari MSE dan menawarkan interpretasi yang lebih intuitif karena memiliki satuan yang sama dengan variabel target awal. Nilai RMSE yang lebih tinggi berarti persentase kesalahan yang lebih tinggi dalam prediksi. Dalam hal ini, nilai RMSE yang relatif tinggi menunjukkan tingkat kesalahan yang cukup besar dalam memprediksi regressor JST.
-
-* RF (Random Forest Regressor):
-
-a.	Nilai MSE adalah 0.2749795. Skor MSE yang lebih rendah dibandingkan dengan regressor JST menunjukkan tingkat kesalahan yang lebih rendah dalam memprediksi regressor RF.
-b.	Nilai R2 adalah -0.1507715. Nilai R2 negatif menunjukkan bahwa model regresi RF juga tidak mampu menjelaskan variasi data.
-c.	Nilai RMSE adalah 0,5243849. Nilai RMSE yang lebih rendah dibandingkan dengan regressor JST menunjukkan tingkat kesalahan yang lebih rendah dalam memprediksi regressor RF.
-
-* NN (Neural Network):
-
-a.	Nilai MSE adalah 0,2383078. Nilai MSE yang lebih rendah dibandingkan dengan regressor JST dan regressor RF menunjukkan tingkat kesalahan yang lebih rendah dalam prediksi jaringan saraf. 
-b.	Nilai R2 adalah 0,0026972. Nilai R2 mendekati nol menunjukkan bahwa model jaringan saraf memberikan sedikit penjelasan untuk variabilitas data.
-c.	Nilai RMSE adalah 0,4881678. Nilai RMSE yang lebih rendah dibandingkan dengan regressor JST dan regressor RF menunjukkan tingkat kesalahan yang lebih rendah dalam prediksi jaringan saraf.
+Pada hasil evaluasi modelling data ini menunjukkan MSE, R-Square (R2), MedAE, dan RMSE pada algoritma SVR adalah: 
+Mean squared error =  0.34;
+Mean absolute error =  0.43;
+Median absolute error =  0.1;
+RMSE: 0.5848034889023938;
+R^2: 0.912;
 
 7. KESIMPULAN
 
 Dalam penelitian ini dapat disimpulkan sebagai berikut:
 
-- KNN (K-Nearest Neighbour Regressor) memiliki nilai MSE sebesar 0.2851081, nilai R-squared sebesar -0.1931589, dan nilai RMSE sebesar 0.5339551. Model KNN Regressor memiliki tingkat kesalahan yang cukup besar dalam memprediksi nilai target, dan kemampuannya untuk menjelaskan variasi dalam data sangat rendah.
+Dalam penelitian ini dapat disimpulkan sebagai berikut:
 
-- RF (Random Forest Regressor) memiliki nilai MSE sebesar 0.2749795, nilai R-squared sebesar -0.1507715, dan nilai RMSE sebesar 0.5243849. Model RF Regressor memiliki tingkat kesalahan yang sedikit lebih kecil dibandingkan dengan KNN Regressor, tetapi tetap memiliki kinerja yang rendah dalam menjelaskan variasi dalam data.
+Dari hasil evaluasi yang dilakukan, dapat disimpulkan bahwa model prediksi memiliki kualitas yang baik dan mampu memberikan hasil yang cukup akurat. Berikut adalah analisis lebih lanjut terkait beberapa nilai evaluasi yang diperoleh:
 
-- NN (Neural Network) memiliki nilai MSE sebesar 0.2383078, nilai R-squared sebesar 0.0026972, dan nilai RMSE sebesar 0.4881678. Model Neural Network memiliki tingkat kesalahan yang relatif lebih kecil dibandingkan dengan KNN Regressor dan RF Regressor, dan kemampuannya dalam menjelaskan variasi dalam data sedikit lebih baik.
+- Mean squared error (MSE) sebesar 0.34 menunjukkan bahwa rata-rata selisih kuadrat antara nilai aktual dan nilai prediksi adalah relatif kecil. Ini menunjukkan tingkat kesalahan yang rendah dalam model prediksi. Mean absolute error (MAE) sebesar 0.43 menunjukkan bahwa rata-rata selisih mutlak antara nilai aktual dan nilai prediksi juga rendah. Artinya, prediksi cenderung mendekati nilai aktual dengan baik.
 
-Dari ketiga algoritma tersebut, Neural Network menunjukkan performa yang paling baik dengan MSE dan RMSE yang lebih rendah daripada KNN Regressor dan RF Regressor. Namun, nilai R-squared untuk semua algoritma tersebut masih rendah atau negatif, menunjukkan bahwa model-model tersebut tidak mampu menjelaskan variasi dalam data dengan baik. Oleh karena itu, diperlukan peninjauan lebih lanjut dan mungkin peningkatan pada pemodelan dan fitur yang digunakan untuk mencapai hasil yang lebih baik dalam memprediksi nilai target.
+- Median absolute error (MedAE) sebesar 0.1 mengindikasikan bahwa sebagian besar kesalahan prediksi terletak pada rentang yang relatif kecil. Hal ini menunjukkan konsistensi model dalam memprediksi data dengan tingkat kesalahan yang rendah.
+
+- Root Mean Square Error (RMSE) sebesar 0.5848 menunjukkan akurasi yang tinggi dalam memprediksi nilai aktual. RMSE menggambarkan sejauh mana perbedaan antara nilai aktual dan nilai prediksi secara keseluruhan. Semakin kecil nilai RMSE, semakin akurat prediksi model.
+
+- R-squared (R^2) sebesar 0.912 menandakan bahwa model mampu menjelaskan 91.2% variasi dalam data aktual. Semakin tinggi nilai R^2, semakin baik model dapat menggambarkan pola dan tren yang ada dalam data aktual.
+
+Berdasarkan kesimpulan di atas, dapat dikatakan bahwa model prediksi yang dievaluasi memiliki performa yang baik. Meskipun tidak ada model yang sempurna, nilai-nilai evaluasi yang rendah, seperti MSE, MAE, MedAE, RMSE, dan tingkat keakuratan yang tinggi dengan R^2, menunjukkan bahwa model cenderung memberikan hasil prediksi yang akurat dan konsisten. Namun, tetap perlu dilakukan analisis lebih lanjut untuk memastikan validitas model dan memperhatikan konteks dan tujuan prediksi yang ingin dicapai.
+
 
 8. SARAN
 
