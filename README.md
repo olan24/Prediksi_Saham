@@ -128,12 +128,12 @@ RMSE adalah akar kuadrat dari MSE. RMSE cenderung memungkinkan interpretasi yang
 Rumus RMSE:
 
 RMSE = √MSE 
-Pada hasil evaluasi modelling data ini menunjukkan MSE, R-Square (R2), MedAE, dan RMSE pada algoritma SVR adalah: 
-Mean squared error =  0.34;
-Mean absolute error =  0.43;
-Median absolute error =  0.1;
-RMSE: 0.5848034889023938;
-R^2: 0.912;
+Pada hasil evaluasi modelling data ini menunjukkan MSE, MAE, R-Square (R2), MedAE, dan RMSE pada algoritma SVR adalah: 
+- Mean squared error(MSE) =  0.34;
+- Mean absolute error(MAE) =  0.43;
+- Median absolute error(MedAE) =  0.1;
+- RMSE: 0.5848034889023938;
+- R^2: 0.912;
 
 7. KESIMPULAN
 
