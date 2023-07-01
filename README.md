@@ -44,13 +44,14 @@ Data pada project ini menggunakan dataset dari Kaggle.com (https://www.kaggle.co
     3.1 Overview Data
 - Nama dataset : Data stock daily diambil dari tanggal 16 April 2001 sampai dengan 6 Januari 2023.
 
-Jadi, berdasarkan informasi data daily harga saham bank mandiri yaitu 5085 data dengan struktur data saham yaitu: timestamp, open, low, high, close, dan volume.
-timestamp = Date and time of stock transaction
-open = opening price
-low = lowest price in the timespan
-high = highest price in the timespan
-close = closing price
-volume = Total volume traded in the timespan
+Jadi, berdasarkan informasi data daily harga saham bank mandiri yaitu 5085 data dengan struktur data saham (variabel) yaitu: timestamp, open, low, high, close, dan volume.
+Ulasan Variabel:
+- timestamp = Date and time of stock transaction
+- open = opening price
+- low = lowest price in the timespan
+- high = highest price in the timespan
+- close = closing price
+- volume = Total volume traded in the timespan
 
     3.2 Analisis Deskriptif
 
