@@ -112,6 +112,35 @@ Gambar 3.
 
 ![1](https://github.com/olan24/Prediksi_Saham/assets/68806443/3bcb462f-a120-4261-90b9-bfb8bc41d517)
 
+
+Tabel 1. 
+
+timestamp      close     volume        day      month    \textbackslash{}         &  &  &  &  &  &  \\
+timestamp       1.0000000  0.9506830 -0.2801296 -0.0011882  0.0102865             &  &  &  &  &  &  \\
+close           0.9506830  1.0000000 -0.2875390 -0.0027040  0.0066413             &  &  &  &  &  &  \\
+volume         -0.2801296 -0.2875390  1.0000000 -0.0082141 -0.0714209             &  &  &  &  &  &  \\
+day            -0.0011882 -0.0027040   -0.0082141  1.0000000  0.0136003           &  &  &  &  &  &  \\
+month           0.0102865  0.0066413 -0.0714209  0.0136003    1.0000000           &  &  &  &  &  &  \\
+year            0.9986815  0.9496046 -0.2761936 -0.0061524   -0.0408802           &  &  &  &  &  &  \\
+is\_quarter\_end  0.0055890 -0.0017293 -0.0584188  0.0020466    0.2013467         &  &  &  &  &  &  \\
+open-close      0.0256339 -0.0006410 -0.0549612   -0.0020995 -0.0245449           &  &  &  &  &  &  \\
+low-high       -0.6469144 -0.6134978 -0.0301265  0.0088819 -0.0071288             &  &  &  &  &  &  \\
+target          0.0475509  0.0309021    0.0254940 -0.0002886 -0.0122267           &  &  &  &  &  &  \\
+                                                                                  &  &  &  &  &  &  \\
+year  is\_quarter\_end  open-close     low-high     target                        &  &  &  &  &  &  \\
+timestamp       0.9986815       0.0055890   0.0256339 -0.6469144  0.0475509       &  &  &  &  &  &  \\
+close           0.9496046      -0.0017293  -0.0006410 -0.6134978  0.0309021       &  &  &  &  &  &  \\
+volume         -0.2761936      -0.0584188  -0.0549612 -0.0301265  0.0254940       &  &  &  &  &  &  \\
+day            -0.0061524       0.0020466  -0.0020995    0.0088819 -0.0002886     &  &  &  &  &  &  \\
+month          -0.0408802       0.2013467  -0.0245449 -0.0071288 -0.0122267       &  &  &  &  &  &  \\
+year            1.0000000      -0.0046678   0.0268740 -0.6460770  0.0481405       &  &  &  &  &  &  \\
+is\_quarter\_end   -0.0046678       1.0000000  -0.0013658    0.0326007  0.0001637 &  &  &  &  &  &  \\
+open-close      0.0268740      -0.0013658   1.0000000    0.0514266  0.0085083     &  &  &  &  &  &  \\
+low-high       -0.6460770       0.0326007   0.0514266    1.0000000 -0.0383031     &  &  &  &  &  &  \\
+target          0.0481405       0.0001637   0.0085083 -0.0383031  1.0000000       &  &  &  &  &  & 
+\end{tabular}
+\end{table}
+
 5. MODELLING
 
 - Random Forest (RF) diperkenalkan oleh Breiman pada tahun 2001. RF biasanya digunakan untuk permasalahan klasifikasi dan Regresi yang melibatkan dataset dalam jumlah besar. Selain itu, RF juga termasuk dalam kategori algoritma ensemble learning. Dalam kasus klasifikasi, penentuan suara terbanyak ditentukan berdasarkan vote setiap tree sedangkan dalam kasus regresi ditetapkan berdasarkan pada nilai rata-rata setiap tree[4].
