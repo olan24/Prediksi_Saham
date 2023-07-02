@@ -90,7 +90,7 @@ Gambar 2.
 
 4. DATA PREPARATION
 
-Untuk mengetahui sebaran distribusi data kecenderungan pusat, serta adanya nilai ekstrem atau outlier dalam setiap fitur maka perlu dibuatkan sebuah plot sebagai gambaran. tahap ini dilakukan pengelompokkan data harian berdasarkan tahun dan menghitung rata-rata nilai pada kolom-kolom 'open', 'high', 'low', dan 'close'. Selanjutnya, membuat subplot dengan ukuran (20, 10) untuk menampilkan 4 grafik bar terpisah, masing-masing untuk kolom-kolom tersebut.
+a. Untuk mengetahui sebaran distribusi data kecenderungan pusat, serta adanya nilai ekstrem atau outlier dalam setiap fitur maka perlu dibuatkan sebuah plot sebagai gambaran. tahap ini dilakukan pengelompokkan data harian berdasarkan tahun dan menghitung rata-rata nilai pada kolom-kolom 'open', 'high', 'low', dan 'close'. Selanjutnya, membuat subplot dengan ukuran (20, 10) untuk menampilkan 4 grafik bar terpisah, masing-masing untuk kolom-kolom tersebut.
 
 Gambar 3. plot 4 grafik
 
@@ -170,14 +170,32 @@ target          0.0481405       0.0001637   0.0085083 -0.0383031  1.0000000     
 
 
 b. Teknik preparation yang digunakan adalah standart scaler. StandardScaler adalah salah satu transformer yang digunakan dalam pemrosesan data serta dalam analisis data dan pemodelan statistik. StandardScaler digunakan untuk menormalkan atau menskalakan fitur-fitur numerik dalam sebuah dataset. Pemrosesan ini melakukan penskalaan fitur-fitur dengan menghilangkan rata-rata dan menskalakan varians menjadi 1.
+
 c. Split Data: Pada tahapan ini data dibagi meliputi Data Train 4576 (90%) dan Data Valid/Test 509 (10%) dari keseluruhan data.
 
 
 5. MODELLING
 
-- Random Forest (RF) diperkenalkan oleh Breiman pada tahun 2001. RF biasanya digunakan untuk permasalahan klasifikasi dan Regresi yang melibatkan dataset dalam jumlah besar. Selain itu, RF juga termasuk dalam kategori algoritma ensemble learning. Dalam kasus klasifikasi, penentuan suara terbanyak ditentukan berdasarkan vote setiap tree sedangkan dalam kasus regresi ditetapkan berdasarkan pada nilai rata-rata setiap tree[4].
-- K-Nearest Neighbour adalah  KNN dilakukan dengan cara mengklasifikasikan data input berdasarkan data pembelajaran yang jarak tetangganya paling dekat atau memiliki nilai selisih yang kecil dengan data input tersebut. Jarak antara data input dengan training sample yang sudah ada dihitung dengan Euclidean Distance[3]. 
-- Jaringan Syaraf Tiruan atau dalam istilah internasionalnya Neural Networks bermaksud meniru cara kerja otak makhluk hidup. Komponen utamanya dari JST antara lain neuron dan sinaps. Neuron berisi informasi suatu informasi dapat diteruskan atau tidak sedangkan sinaps berisi hubungan antara satu neuron dengan lainnya[5].
+Pada tugas ini, penulis menggunakan algoritma Support Vector Regression (SVR) untuk melakukan regresi dengan kernel linear. Berikut adalah penjelasan tahapan dan parameter yang digunakan:
+
+1. Membuat objek regressor SVR:
+   `regressor = SVR(kernel='linear', C=1.0, epsilon=0.1)`
+   - `SVR` adalah kelas regressor dari modul `sklearn.svm` yang digunakan untuk melakukan regresi dengan Support Vector Machines (SVM).
+   - `kernel='linear'` menentukan bahwa kita menggunakan kernel linier untuk model SVR. Kernel linier mengasumsikan bahwa hubungan antara fitur dan target adalah linear.
+   - `C=1.0` adalah parameter yang mengontrol toleransi terhadap kesalahan dalam model. Semakin tinggi nilai C, semakin ketat model akan menyesuaikan data pelatihan.
+   - `epsilon=0.1` adalah lebar jendela toleransi kesalahan. Nilai ini mengontrol seberapa banyak poin data pelatihan dapat jatuh di luar batas toleransi.
+
+2. Melatih model dengan data pelatihan:
+   `regressor.fit(x_train, y_train)`
+   - `x_train` adalah matriks fitur dari data pelatihan yang digunakan untuk melatih model.
+   - `y_train` adalah vektor target dari data pelatihan yang digunakan untuk melatih model.
+
+3. Memprediksi target menggunakan data validasi:
+   `y_pred = regressor.predict(x_valid)`
+   - `x_valid` adalah matriks fitur dari data validasi yang digunakan untuk melakukan prediksi.
+   - `y_pred` adalah vektor hasil prediksi target untuk data validasi.
+
+Dalam rangkaian ini, SVR digunakan untuk mempelajari hubungan linier antara fitur dan target. Parameter C dan epsilon digunakan untuk mengontrol kompleksitas model dan toleransi terhadap kesalahan. Setelah melatih model, kita menggunakan model yang terlatih untuk memprediksi target pada data validasi.
 
 6. EVALUASI/RESULT
 
@@ -263,4 +281,3 @@ Dengan melakukan penyempurnaan pada pemodelan, pemilihan fitur yang tepat, penam
 
 [8] R. T. Handayanto dan Herlawati, Data Mining dan Machine Learning Menggunakan Matlab & Python. Penerbit informatika, 2020.
 
-[5] R. T. Handayanto dan Herlawati, Data Mining dan Machine Learning Menggunakan Matlab & Python. Penerbit informatika, 2020.
