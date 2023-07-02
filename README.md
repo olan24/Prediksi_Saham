@@ -82,7 +82,7 @@ Hasil perhitungan di atas adalah statistik ringkasan (summary statistics) yang d
 5. Kolom "volume":
    - Statistik yang diberikan mirip dengan kolom "open", tetapi berlaku untuk data dalam kolom "volume".
 
-Pada umumnya, statistik ringkasan digunakan untuk memberikan gambaran singkat tentang distribusi data dalam suatu kolom. Count menunjukkan jumlah data yang tersedia, mean memberikan informasi tentang nilai rata-rata, std mengukur dispersi atau variasi data, min dan max menunjukkan rentang nilai, dan persentil memberikan informasi tentang distribusi data dalam kuartil tertentu (25%, 50%, 75%). Statistik ini dapat membantu dalam analisis dan pemahaman data yang ada.
+Pada umumnya, statistik ringkasan digunakan untuk memberikan gambaran singkat tentang distribusi data dalam suatu kolom. Count menunjukkan jumlah data yang tersedia, mean memberikan informasi tentang nilai rata-rata, std mengukur dispersi atau variasi data, min dan max menunjukkan rentang nilai, dan persentil memberikan informasi tentang distribusi data dalam kuartil tertentu (25%, 50%, 75%). Statistik ini dapat membantu dalam analisis dan pemahaman data yang ada. tampilan penjelasan dapat di uraikan pada gambar 2:
 
 Gambar 2. 
 
@@ -107,6 +107,10 @@ dari matrix correlation diatas, dapat diketahui:
 
 - Teknik preparation yang digunakan adalah standart scaler. StandardScaler adalah salah satu transformer yang digunakan dalam pemrosesan data serta dalam analisis data dan pemodelan statistik. StandardScaler digunakan untuk menormalkan atau menskalakan fitur-fitur numerik dalam sebuah dataset. Pemrosesan ini melakukan penskalaan fitur-fitur dengan menghilangkan rata-rata dan menskalakan varians menjadi 1.
 - Split Data: Pada tahapan ini data dibagi meliputi Data Train 4576 (90%) dan Data Valid/Test 509 (10%) dari keseluruhan data.
+
+Gambar 3.
+
+![1](https://github.com/olan24/Prediksi_Saham/assets/68806443/3bcb462f-a120-4261-90b9-bfb8bc41d517)
 
 5. MODELLING
 
