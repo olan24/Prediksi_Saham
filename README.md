@@ -199,34 +199,54 @@ Dalam rangkaian ini, SVR digunakan untuk mempelajari hubungan linier antara fitu
 
 6. EVALUASI/RESULT
 
-- Kesalahan Kuadrat Rata-Rata (MSE):
-MSE adalah ukuran yang memperkirakan kesalahan kuadrat rata-rata antara nilai prediksi dan nilai sebenarnya dari kumpulan data. Semakin rendah nilai MSE, semakin baik model regresi memprediksi nilai target.
-MSE dihitung dengan menjumlahkan kesalahan kuadrat (selisih antara nilai prediksi dan nilai aktual) untuk setiap titik data, lalu membaginya dengan jumlah total titik data. Rumusnya adalah sebagai berikut:
+Hasil dari kode telah di bangun, menunjukkan beberapa metrik evaluasi yang digunakan untuk mengukur kualitas prediksi dari model regresi. Berikut adalah penjelasan dari setiap metrik evaluasi yang diberikan:
 
-MSE = (1/n) * Σ(yi - ŷi)^2
+1. Mean Squared Error (MSE):
+   - MSE mengukur rata-rata dari kuadrat selisih antara nilai prediksi dan nilai sebenarnya.
+   - Rumus MSE: MSE = (1/n) * Σ(y_pred - y_actual)^2, di mana y_pred adalah nilai prediksi dan y_actual adalah nilai sebenarnya, dan n adalah jumlah data.
+   - Nilai MSE yang lebih rendah menunjukkan kesalahan prediksi yang lebih kecil dan kualitas prediksi yang lebih baik.
 
-di mana yi adalah nilai sebenarnya, ŷi adalah nilai prediksi, dan n adalah jumlah titik data.
+2. Mean Absolute Error (MAE):
+   - MAE mengukur rata-rata dari selisih absolut antara nilai prediksi dan nilai sebenarnya.
+   - Rumus MAE: MAE = (1/n) * Σ|y_pred - y_actual|, di mana y_pred adalah nilai prediksi dan y_actual adalah nilai sebenarnya, dan n adalah jumlah data.
+   - Nilai MAE yang lebih rendah menunjukkan kesalahan prediksi yang lebih kecil dan kualitas prediksi yang lebih baik.
 
-- R-kuadrat (R2):
-R2 adalah metrik evaluasi yang mengukur sejauh mana variasi variabel target dapat dijelaskan oleh model regresi. Nilai R2 berkisar dari 0 hingga 1, dengan 0 menunjukkan bahwa model tidak dapat menjelaskan variasi sama sekali dan 1 menunjukkan bahwa model dapat menjelaskan semua variasi dengan sempurna.
-R2 dihitung dengan membandingkan varian prediksi model dengan varian nilai target aktual. Nilai R2 yang positif menunjukkan bahwa model membuat prediksi yang lebih baik daripada prediksi yang hanya menggunakan rata-rata. Rumusnya adalah sebagai berikut:
+3. Median Absolute Error (MedAE):
+   - MedAE mengukur nilai tengah dari selisih absolut antara nilai prediksi dan nilai sebenarnya.
+   - Rumus MedAE: MedAE = Median(|y_pred - y_actual|), di mana y_pred adalah nilai prediksi dan y_actual adalah nilai sebenarnya.
+   - MedAE mengabaikan nilai outlier dan memberikan gambaran tentang kesalahan prediksi yang lebih stabil.
 
-R2 = 1 - (SSR/SST)
+4. Root Mean Squared Error (RMSE):
+   - RMSE adalah akar kuadrat dari MSE. Ini memberikan perkiraan standar deviasi dari kesalahan prediksi.
+   - Rumus RMSE: RMSE = √MSE.
+   - Nilai RMSE yang lebih rendah menunjukkan kesalahan prediksi yang lebih kecil dan kualitas prediksi yang lebih baik.
 
-di mana SSR adalah jumlah residu kuadrat dan SST adalah jumlah total kuadrat.
-Secara umum, semakin tinggi nilai R2, semakin baik model regresi dalam menjelaskan variasi data. Namun, R2 juga memiliki keterbatasan dan harus dianalisis bersama dengan metrik lainnya. 
+5. R^2 (Coefficient of Determination):
+   - R^2 mengukur seberapa baik model regresi cocok dengan data yang diamati.
+   - Rumus R^2: R^2 = 1 - (MSE / Var(y_actual)), di mana Var(y_actual) adalah varians dari nilai sebenarnya.
+   - Nilai R^2 berkisar antara 0 dan 1. Nilai yang lebih tinggi menunjukkan bahwa model memiliki kemampuan yang lebih baik dalam menjelaskan variasi dalam data.
 
-- RMSE 
-RMSE adalah akar kuadrat dari MSE. RMSE cenderung memungkinkan interpretasi yang lebih intuitif karena memiliki unit yang sama dengan variabel target asli. Seperti halnya MSE, semakin rendah nilai RMSE, semakin baik model regresi memprediksi nilai target.
-Rumus RMSE:
-
-RMSE = √MSE 
+Dalam konteks hasil kode di atas, hasil evaluasi menunjukkan bahwa model regresi memiliki performa yang baik. MSE, MAE, dan RMSE yang rendah menunjukkan kesalahan prediksi yang kecil, sedangkan MedAE yang rendah menunjukkan kesalahan prediksi yang stabil. Nilai R^2 yang tinggi menunjukkan bahwa model dapat menjelaskan sebagian besar variasi dalam data.
 Pada hasil evaluasi modelling data ini menunjukkan MSE, MAE, R-Square (R2), MedAE, dan RMSE pada algoritma SVR adalah: 
 - Mean squared error(MSE) =  0.34;
 - Mean absolute error(MAE) =  0.43;
 - Median absolute error(MedAE) =  0.1;
 - RMSE: 0.5848034889023938;
 - R^2: 0.912;
+
+Tabel 2.
+
+\begin{table}[]
+\begin{tabular}{ll}
+Matriks Regresi      & Value    \\
+MSE                  & 0,34     \\
+MAE                  & 0,43     \\
+MedAE                & 0,1      \\
+RMSE                 & 0,584803 \\
+R\textasciicircum{}2 & 0,912   
+\end{tabular}
+\end{table}
+
 
 7. KESIMPULAN
 
