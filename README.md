@@ -112,9 +112,10 @@ Gambar 3.
 
 ![1](https://github.com/olan24/Prediksi_Saham/assets/68806443/3bcb462f-a120-4261-90b9-bfb8bc41d517)
 
-
 Tabel 1. 
 
+\begin{table}[]
+\begin{tabular}{lllllll}
 timestamp      close     volume        day      month    \textbackslash{}         &  &  &  &  &  &  \\
 timestamp       1.0000000  0.9506830 -0.2801296 -0.0011882  0.0102865             &  &  &  &  &  &  \\
 close           0.9506830  1.0000000 -0.2875390 -0.0027040  0.0066413             &  &  &  &  &  &  \\
