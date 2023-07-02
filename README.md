@@ -257,7 +257,6 @@ R\textasciicircum{}2 & 0,912
 
 7. KESIMPULAN
 
-Dalam penelitian ini dapat disimpulkan sebagai berikut:
 
 Dalam penelitian ini dapat disimpulkan sebagai berikut:
 
