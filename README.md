@@ -54,32 +54,39 @@ Ulasan Variabel:
 - volume = Total volume traded in the timespan
 
 Gambar 1. 
+
+<img width="283" alt="4" src="https://github.com/olan24/Prediksi_Saham/assets/68806443/cba019d3-57c3-478e-9d75-ca80347f008e">
+
+Jadi, gambaran tentang struktur dan jenis data yang terdapat dalam DataFrame. Hal ini penting dalam analisis data lebih lanjut, seperti visualisasi, pemodelan, atau penarikan kesimpulan berdasarkan dataset tersebut.
+Hasil perhitungan di atas adalah statistik ringkasan (summary statistics) yang diberikan untuk setiap kolom dalam data. Berikut adalah penjelasan detail untuk setiap statistik yang diberikan:
+
+1. Kolom "open":
+   - Count: Jumlah data yang tersedia dalam kolom "open" adalah 5085.
+   - Mean: Rata-rata dari data dalam kolom "open" adalah 4035.6875123.
+   - Standard Deviation (Std): Standar deviasi dari data dalam kolom "open" adalah 2522.9136979.
+   - Minimum (Min): Nilai terendah dalam kolom "open" adalah 368.
+   - 25th Percentile (25%): Nilai persentil ke-25 dari data dalam kolom "open" adalah 1450.
+   - Median (50%): Nilai tengah (median) dari data dalam kolom "open" adalah 4125.
+   - 75th Percentile (75%): Nilai persentil ke-75 dari data dalam kolom "open" adalah 6025.
+   - Maximum (Max): Nilai tertinggi dalam kolom "open" adalah 10875.
+
+2. Kolom "low":
+   - Statistik yang diberikan mirip dengan kolom "open", tetapi berlaku untuk data dalam kolom "low".
+
+3. Kolom "high":
+   - Statistik yang diberikan mirip dengan kolom "open", tetapi berlaku untuk data dalam kolom "high".
+
+4. Kolom "close":
+   - Statistik yang diberikan mirip dengan kolom "open", tetapi berlaku untuk data dalam kolom "close".
+
+5. Kolom "volume":
+   - Statistik yang diberikan mirip dengan kolom "open", tetapi berlaku untuk data dalam kolom "volume".
+
+Pada umumnya, statistik ringkasan digunakan untuk memberikan gambaran singkat tentang distribusi data dalam suatu kolom. Count menunjukkan jumlah data yang tersedia, mean memberikan informasi tentang nilai rata-rata, std mengukur dispersi atau variasi data, min dan max menunjukkan rentang nilai, dan persentil memberikan informasi tentang distribusi data dalam kuartil tertentu (25%, 50%, 75%). Statistik ini dapat membantu dalam analisis dan pemahaman data yang ada.
+
+Gambar 2. 
+
 <img width="384" alt="2" src="https://github.com/olan24/Prediksi_Saham/assets/68806443/6e82ce3c-b33b-481e-8d0f-c4cab9454288">
-
-    3.2 Analisis Deskriptif
-
-Dalam menganalisis, project ini menggunakan metode EDA.
-
-- Jumlah data adalah 5085
-- Rata-rata data berada di angka 3980 – 4084 dari keseluruhan data
-- Nilai terendah data berada di angka 368 pada harga close saham (Rp) 
-- Nilai tertinggi data pada harga close saham yaitu 10900 dalam bentuk rupiah (Rp)
-- mengubah kolom 'timestamp' menjadi tipe data datetime, yang berguna untuk analisis waktu dan pengindeksan berdasarkan waktu dalam DataFrame.
-
-Jadi, 
-- Ukuran DataFrame: DataFrame memiliki 5085 baris dan 6 kolom, menunjukkan bahwa data mencakup 5085 entri atau pengamatan yang berbeda.
-- Kolom-kolom: DataFrame terdiri dari 6 kolom dengan label sebagai berikut:
-- timestamp: Kolom ini berisi nilai tanggal dan waktu dalam format datetime64[ns]. Hal ini memungkinkan penggunaan fungsi dan metode yang disediakan oleh tipe data datetime.
-open, low, high, close: Kolom-kolom ini berisi nilai bilangan bulat yang mewakili harga saham dalam rentang tertentu, yaitu nilai pembukaan ( open), terendah ( low), tertinggi ( high), dan penutupan ( close) pada setiap entri data.
-volume: Kolom ini mengandung nilai integer yang mewakili volume perdagangan saham pada setiap entri data.
-- Tipe data: Sebagian besar kolom dalam DataFrame memiliki tipe data int64, menunjukkan bahwa nilai-nilai dalam kolom tersebut adalah bilangan bulat. Kolom tanggal timestampmemiliki tipe data datetime64[ns], yang menyimpan dan waktu dalam format yang dapat diolah.
-- Non-Null Count: Setiap kolom dalam DataFrame memiliki 5085 non-null count, yang menunjukkan bahwa tidak ada nilai yang hilang (null) dalam dataset. Hal ini berarti tidak ada data entri yang kosong atau tidak terisi.
-- Penggunaan Memori: DataFrame df_dailymenggunakan memori sekitar 238.5 KB untuk menyimpan data dalam format yang sesuai dengan kolom tipe data.
-
-Informasi di atas memberikan gambaran tentang struktur dan jenis data yang terdapat dalam DataFrame. Hal ini penting dalam analisis data lebih lanjut, seperti visualisasi, pemodelan, atau penarikan kesimpulan berdasarkan dataset tersebut.
-
-    3.3 visualisasi Data 
-menampilkan visualisasi distribusi dataframe dengan histogram
 
 4. DATA PREPARATION
 
