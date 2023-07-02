@@ -91,7 +91,16 @@ Gambar 2.
 4. DATA PREPARATION
 
 Untuk mengetahui sebaran distribusi data kecenderungan pusat, serta adanya nilai ekstrem atau outlier dalam setiap fitur maka perlu dibuatkan sebuah plot sebagai gambaran. tahap ini dilakukan pengelompokkan data harian berdasarkan tahun dan menghitung rata-rata nilai pada kolom-kolom 'open', 'high', 'low', dan 'close'. Selanjutnya, membuat subplot dengan ukuran (20, 10) untuk menampilkan 4 grafik bar terpisah, masing-masing untuk kolom-kolom tersebut.
+
+Gambar 3. plot 4 grafik
+
+<img width="756" alt="5" src="https://github.com/olan24/Prediksi_Saham/assets/68806443/95b3ada4-e7a8-4bcb-a20c-f45bba88a614">
+
 jadi, Berdasarkan Nilai kuartal akhir Bank Mandiri setelah melakukan pengumuman kuartal akhir mengalami penurunan pada harga close. Begitupun juga yang terjadi pada volume turut mengalami penurunan.
+
+Gambar 4. 
+
+![1](https://github.com/olan24/Prediksi_Saham/assets/68806443/3bcb462f-a120-4261-90b9-bfb8bc41d517)
 
 dari matrix correlation diatas, dapat diketahui:
 
@@ -105,14 +114,7 @@ dari matrix correlation diatas, dapat diketahui:
 
 - Korelasi antara low-high dan target adalah -0.038303. Ini menunjukkan adanya korelasi negatif yang lemah antara perbedaan nilai low-high dan target. Hal ini menunjukkan bahwa perbedaan nilai antara low dan high juga memiliki pengaruh minimal terhadap nilai target.
 
-- Teknik preparation yang digunakan adalah standart scaler. StandardScaler adalah salah satu transformer yang digunakan dalam pemrosesan data serta dalam analisis data dan pemodelan statistik. StandardScaler digunakan untuk menormalkan atau menskalakan fitur-fitur numerik dalam sebuah dataset. Pemrosesan ini melakukan penskalaan fitur-fitur dengan menghilangkan rata-rata dan menskalakan varians menjadi 1.
-- Split Data: Pada tahapan ini data dibagi meliputi Data Train 4576 (90%) dan Data Valid/Test 509 (10%) dari keseluruhan data.
-
-Gambar 3.
-
-![1](https://github.com/olan24/Prediksi_Saham/assets/68806443/3bcb462f-a120-4261-90b9-bfb8bc41d517)
-
-Tabel 1. 
+Tabel 1. Correlation matrix
 
 
 timestamp      close     volume        day      month    \textbackslash{}         &  &  &  &  &  &  \\
@@ -165,6 +167,11 @@ target          0.0481405       0.0001637   0.0085083 -0.0383031  1.0000000     
 
 \end{tabular}
 \end{table}
+
+
+b. Teknik preparation yang digunakan adalah standart scaler. StandardScaler adalah salah satu transformer yang digunakan dalam pemrosesan data serta dalam analisis data dan pemodelan statistik. StandardScaler digunakan untuk menormalkan atau menskalakan fitur-fitur numerik dalam sebuah dataset. Pemrosesan ini melakukan penskalaan fitur-fitur dengan menghilangkan rata-rata dan menskalakan varians menjadi 1.
+c. Split Data: Pada tahapan ini data dibagi meliputi Data Train 4576 (90%) dan Data Valid/Test 509 (10%) dari keseluruhan data.
+
 
 5. MODELLING
 
