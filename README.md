@@ -52,7 +52,9 @@ Ulasan Variabel:
 - high = highest price in the timespan
 - close = closing price
 - volume = Total volume traded in the timespan
-Gambar 1. <img width="384" alt="2" src="https://github.com/olan24/Prediksi_Saham/assets/68806443/6e82ce3c-b33b-481e-8d0f-c4cab9454288">
+
+Gambar 1. 
+<img width="384" alt="2" src="https://github.com/olan24/Prediksi_Saham/assets/68806443/6e82ce3c-b33b-481e-8d0f-c4cab9454288">
 
     3.2 Analisis Deskriptif
 
