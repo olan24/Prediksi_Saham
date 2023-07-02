@@ -238,12 +238,19 @@ Tabel 2.
 
 \begin{table}[]
 \begin{tabular}{ll}
+
 Matriks Regresi      & Value    \\
+
 MSE                  & 0,34     \\
+
 MAE                  & 0,43     \\
+
 MedAE                & 0,1      \\
+
 RMSE                 & 0,584803 \\
+
 R\textasciicircum{}2 & 0,912   
+
 \end{tabular}
 \end{table}
 
